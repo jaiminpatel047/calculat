@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root{
+    --prime-font-color: #111827;
+    --prime-font-hover-color: #E7B10A;
+}
+
+body{ 
+  /* background-color: whitesmoke; */
+  background-color: #111827;
+  opacity: 1;
+ }
+#primeContainer{ background-color: #fff; border-radius: 6px;}
+#dark{ background-color: #383838; color: floralwhite; border: none !important; }
+
+#navbarCenteredExample ul li{
+  font: normal 1rem/1.5rem 'Poppins', sans-serif;
+  padding: 1rem !important;
+}
+
+a{ color: aliceblue; text-decoration: none; transition: all 0.3s ease; }
+a:hover, a:focus{ color: var(--prime-font-hover-color); transition: all 0.3s ease; }
+.bg-clr{ background-color: var(--prime-font-hover-color); color: #F8F5E4; }
+#red{ background-color: #510000e6; }
+#green{ background-color: #023802e0; }
+
+.button-66 {
+  background-color: var(--prime-font-color);
+  border-radius: 4px;
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inherit;
+  font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  padding: 16px 20px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+.button-66:hover { background-color: var(--prime-font-hover-color); transform: translateY(-2px); }
+.modal-content .button-66:hover { background-color: #1b1607; }
+
+@media (min-width: 768px) { .button-66 { padding: 16px 44px; min-width: 150px; } }
+
+.form-check-input:checked{ background-color: var(--prime-font-hover-color) !important; border-color: transparent !important; }
+.form-check-input:checked[type=radio] { background-image: none !important; }
+
+.box-div{width: 30%; background-color: white;}
+.card-div-list ul{ list-style: none;  padding: none;}
+.card-div-list ul li label{ padding: 0 5px; }
+.card-div-header{
+  background-color: var(--prime-font-hover-color);
+  padding: 0.3rem;
+  color: #F8F5E4;
+}
+.wd{ width: 50%; }
+
+.rounDiv{
+  width: 5rem;
+  height: 5rem;
+  background-color: red;
+  border-radius: 50%;
+}
+#colorPalette, #bgColor, #customisation { background-color: #f8f8f8; }
+#colorPalette div:nth-child(2) .rounDiv{ background-color: yellow; }
+#colorPalette div:nth-child(3) .rounDiv{ background-color: #2D2727; }
+#colorPalette div:nth-child(4) .rounDiv{ background-color: #19A7CE; }
+#colorPalette div:nth-child(5) .rounDiv{ background-color: #EA5455; }
+#colorPalette div:nth-child(6) .rounDiv{ background-color: #00235B; }
+#colorPalette div:nth-child(7) .rounDiv{ background-color: #37306B; }
+#colorPalette div:nth-child(8) .rounDiv{ background-color: #060047; }
+#colorPalette div:nth-child(9) .rounDiv{ background-color: #B3005E; }
+#colorPalette div:nth-child(10) .rounDiv{ background-color: #362FD9; }
+#colorPalette div:nth-child(11) .rounDiv{ background-color: #B5F1CC; }
+#colorPalette div:nth-child(12) .rounDiv{ background-color: #A7727D; }
+#colorPalette div:nth-child(13) .rounDiv{ background-color: #F2921D; }
+#colorPalette div:nth-child(14) .rounDiv{ background-color: #674188; }
+#colorPalette div:nth-child(14) .rounDiv{ background-color: #D61355; }
+
+#consultants{ max-width: 100%; padding: 1rem; margin: 2rem auto; border: 1px solid var(--prime-font-hover-color); }
+
+
+
+/* ---------popup--------- */
+.overlay{
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgb(0 0 0 / 77%);
+  z-index: 9999;
+}
+
+.modal-content{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background-color: var(--prime-font-hover-color);
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  min-width: 300px;
+  border-radius: 6px;
+  box-shadow: -2px 0px 16px rgba(0,0,0,0.30), 0px -1px 4px rgba(0,0,0,0.22);
+}
+
+.popup-inner .close-btn{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+/* ------------------ */
+
+
+/* ----calendar---- */
+.react-calendar{
+  width: 60% !important;
+  background-color: #f6ba00c4 !important;
+  padding: 2rem;
+  border: none !important;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  margin: 3rem auto;
+}
+.react-calendar__navigation{ font-size: 1.6rem !important; font-weight: 600 !important; }
+.modal-content .react-calendar{ width: -webkit-fill-available !important;  background: white !important;}
+/* ----cal---- */
+
+
+.alert-primary {
+  --bs-alert-color: #212529 !important;
+  --bs-alert-bg: #e6af2e94 !important;
+  --bs-alert-border-color: #e6af2e !important;
+}
+
+.card{ border: none !important; }
+.active{ background-color: var(--prime-font-hover-color) !important; }
+
+
+.form-control:focus {
+  color: #212529 !important;
+  border: none !important;
+  box-shadow: 0 0 0 0.25rem #e6af2e94 !important;
+}
+
+.card-body{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  background-color: var(--prime-font-hover-color);
+  padding: 1.3rem;
+  border-radius: 5px;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* --------------Floting Button--------------- */
+.bn13 {
+  display: inline-block;
+  padding: 0.65em 1.6em;
+  border-radius: 0.12em;
+  font-weight: 600;
+  border: none;
+  color: var(--prime-font-hover-color);
+  text-align: center;
+  transition: all 0.2s;
+  animation: bn13bouncy 5s infinite linear;
+  position: relative;
+  background-color: var(--prime-font-color);
+}
+
+.bn13:hover {
+  background-color: white;
+}
+
+@keyframes bn13bouncy {
+  0% { top: 0em; }
+  40% { top: 0em; }
+  43% { top: -0.9em; }
+  46% { top: 0em; }
+  48% { top: -0.4em; }
+  50% { top: 0em; }
+  100% { top: 0em; }
+}
+
+/* --------------Floting Button--------------- */
+
+
+/* Dark Mode  */
+.darkMode .form-check-input{ width: 3em !important; Height: 1.6em !important;}
+/* Dark Mode  */
+
+.Toastify__toast-theme--light{
+    background: #111826 !important;
+    color: #ffffff !important;
+    font-size: 1.2rem !important;
+}
